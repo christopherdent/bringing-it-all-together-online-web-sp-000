@@ -36,7 +36,7 @@ attr_reader :id
     SQL
     DB[:conn].execute(sql)
     #binding.pry
-    
+    self
   end 
   
   def self.create(name:, breed:)
