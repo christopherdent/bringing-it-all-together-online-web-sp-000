@@ -82,7 +82,7 @@ attr_reader :id
       SELECT * FROM dogs 
       WHERE name = ?
     SQL
-    binding.pry 
+    #binding.pry 
     result = DB[:conn].execute(sql, name)
     
   end 
