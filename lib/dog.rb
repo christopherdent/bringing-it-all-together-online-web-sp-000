@@ -37,7 +37,7 @@ attr_reader :id
       VALUES (?, ?);
     SQL
     @id = DB[:conn].execute(sql, self.name, self.breed)
-    binding.pry
+    #binding.pry
     self
   end 
   
