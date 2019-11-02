@@ -82,8 +82,10 @@ attr_reader :id
       SELECT * FROM dogs 
       WHERE name = ?
     SQL
-    #binding.pry 
+     
     result = DB[:conn].execute(sql, name)
+    
+    binding.pry 
     Dog.new(id: result[0], name: result[1], breed: result[2])
   end 
   
