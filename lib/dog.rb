@@ -57,7 +57,7 @@ attr_reader :id
       LIMIT 1 
     SQL
     result = DB[:conn].execute(sql, id)[0]
-    Dog.new(result[0], result[1], result[2])
+    Dog.new(id: result[0], name: result[1], breed: result[2])
     
   end 
    
