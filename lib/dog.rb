@@ -56,7 +56,7 @@ attr_reader :id
   
   
   
-  def self.find_by_id(id, db)
+  def self.find_by_id(id)
     sql = <<-SQL 
       SELECT * FROM dogs
       WHERE id = ?
