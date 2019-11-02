@@ -45,7 +45,7 @@ attr_reader :id
     dog
   end
     
-    
+=begin 
       describe ".create" do
     it 'takes in a hash of attributes and uses metaprogramming to create a new dog object. Then it uses the #save method to save that dog to the database'do
       Dog.create(name: "Ralph", breed: "lab")
@@ -57,7 +57,7 @@ attr_reader :id
       expect(teddy).to be_an_instance_of(Dog)
       expect(dog.name).to eq("Dave")
     end
-  end
+=end
     
    
 
