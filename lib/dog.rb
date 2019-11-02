@@ -56,9 +56,9 @@ attr_reader :id
   
   
   
-  def self.find_by_id(id)
+  def self.find_by_id(id, db)
     sql = <<-SQL 
-      SELECT * FROM pokemon
+      SELECT * FROM dogs
       WHERE id = ?
       LIMIT 1 
     SQL
