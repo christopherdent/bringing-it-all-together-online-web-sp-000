@@ -49,10 +49,13 @@ attr_reader :id
     
   end 
   
-  def self.find_by_id
+  def self.find_by_id(id)
     
   end 
    
+  def self.find_or_create_by
+    
+  end 
 
     
   
